@@ -1,0 +1,8 @@
+/home/arjun/Documents/redis-from-scratch/build/CMakeFiles/edit_cache.dir
+/home/arjun/Documents/redis-from-scratch/build/CMakeFiles/rebuild_cache.dir
+/home/arjun/Documents/redis-from-scratch/build/src/server/CMakeFiles/Server.dir
+/home/arjun/Documents/redis-from-scratch/build/src/server/CMakeFiles/edit_cache.dir
+/home/arjun/Documents/redis-from-scratch/build/src/server/CMakeFiles/rebuild_cache.dir
+/home/arjun/Documents/redis-from-scratch/build/src/client/CMakeFiles/Client.dir
+/home/arjun/Documents/redis-from-scratch/build/src/client/CMakeFiles/edit_cache.dir
+/home/arjun/Documents/redis-from-scratch/build/src/client/CMakeFiles/rebuild_cache.dir
