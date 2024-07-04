@@ -1,7 +1,8 @@
-src/server/CMakeFiles/Server.dir/__/common/helper.cpp.o: \
- /home/arjun/Documents/redis-from-scratch/src/common/helper.cpp \
+src/server/CMakeFiles/Server.dir/protocol.cpp.o: \
+ /home/arjun/Documents/redis-from-scratch/src/server/protocol.cpp \
  /usr/include/stdc-predef.h \
- /home/arjun/Documents/redis-from-scratch/src/common/helper.h \
+ /home/arjun/Documents/redis-from-scratch/src/server/protocol.h \
+ /home/arjun/Documents/redis-from-scratch/src/server/../common/helper.h \
  /usr/include/c++/14.1.1/iostream \
  /usr/include/c++/14.1.1/bits/requires_hosted.h \
  /usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -135,7 +136,23 @@ src/server/CMakeFiles/Server.dir/__/common/helper.cpp.o: \
  /usr/include/bits/confname.h /usr/include/bits/getopt_posix.h \
  /usr/include/bits/getopt_core.h /usr/include/bits/unistd_ext.h \
  /usr/include/linux/close_range.h /usr/include/assert.h \
- /usr/include/fcntl.h /usr/include/bits/fcntl.h \
- /usr/include/bits/fcntl-linux.h /usr/include/bits/types/struct_iovec.h \
- /usr/include/linux/falloc.h /usr/include/bits/stat.h \
- /usr/include/bits/struct_stat.h
+ /usr/include/sys/socket.h /usr/include/bits/types/struct_iovec.h \
+ /usr/include/bits/socket.h /usr/include/bits/socket_type.h \
+ /usr/include/bits/sockaddr.h /usr/include/asm/socket.h \
+ /usr/include/asm-generic/socket.h /usr/include/linux/posix_types.h \
+ /usr/include/linux/stddef.h /usr/include/asm/posix_types.h \
+ /usr/include/asm/posix_types_64.h /usr/include/asm-generic/posix_types.h \
+ /usr/include/asm/bitsperlong.h /usr/include/asm-generic/bitsperlong.h \
+ /usr/include/asm/sockios.h /usr/include/asm-generic/sockios.h \
+ /usr/include/bits/types/struct_osockaddr.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/stdint-uintn.h \
+ /usr/include/bits/stdint-least.h /usr/include/c++/14.1.1/vector \
+ /usr/include/c++/14.1.1/bits/stl_uninitialized.h \
+ /usr/include/c++/14.1.1/bits/stl_vector.h \
+ /usr/include/c++/14.1.1/bits/stl_bvector.h \
+ /usr/include/c++/14.1.1/bits/vector.tcc /usr/include/poll.h \
+ /usr/include/sys/poll.h /usr/include/bits/poll.h \
+ /usr/include/netinet/in.h /usr/include/bits/in.h \
+ /usr/include/c++/14.1.1/cstring /usr/include/string.h \
+ /usr/include/strings.h

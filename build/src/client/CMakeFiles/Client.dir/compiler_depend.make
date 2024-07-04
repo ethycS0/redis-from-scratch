@@ -16,6 +16,8 @@ src/client/CMakeFiles/Client.dir/__/common/helper.cpp.o: /home/arjun/Documents/r
   /usr/include/bits/endianness.h \
   /usr/include/bits/environments.h \
   /usr/include/bits/errno.h \
+  /usr/include/bits/fcntl-linux.h \
+  /usr/include/bits/fcntl.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
   /usr/include/bits/getopt_core.h \
@@ -30,11 +32,13 @@ src/client/CMakeFiles/Client.dir/__/common/helper.cpp.o: /home/arjun/Documents/r
   /usr/include/bits/sched.h \
   /usr/include/bits/select.h \
   /usr/include/bits/setjmp.h \
+  /usr/include/bits/stat.h \
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdio_lim.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/struct_stat.h \
   /usr/include/bits/thread-shared-types.h \
   /usr/include/bits/time.h \
   /usr/include/bits/time64.h \
@@ -57,6 +61,7 @@ src/client/CMakeFiles/Client.dir/__/common/helper.cpp.o: /home/arjun/Documents/r
   /usr/include/bits/types/sigset_t.h \
   /usr/include/bits/types/struct_FILE.h \
   /usr/include/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/bits/types/struct_iovec.h \
   /usr/include/bits/types/struct_itimerspec.h \
   /usr/include/bits/types/struct_sched_param.h \
   /usr/include/bits/types/struct_timespec.h \
@@ -167,12 +172,14 @@ src/client/CMakeFiles/Client.dir/__/common/helper.cpp.o: /home/arjun/Documents/r
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
+  /usr/include/fcntl.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/gnu/stubs.h \
   /usr/include/linux/close_range.h \
   /usr/include/linux/errno.h \
+  /usr/include/linux/falloc.h \
   /usr/include/locale.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
@@ -572,15 +579,11 @@ src/client/CMakeFiles/Client.dir/start-client.cpp.o: /home/arjun/Documents/redis
 
 /home/arjun/Documents/redis-from-scratch/src/client/start-client.cpp:
 
-/usr/include/strings.h:
-
 /usr/include/netinet/in.h:
 
 /usr/include/linux/posix_types.h:
 
 /usr/include/c++/14.1.1/cstring:
-
-/usr/include/bits/types/struct_iovec.h:
 
 /usr/include/bits/sockaddr.h:
 
@@ -621,6 +624,8 @@ src/client/CMakeFiles/Client.dir/start-client.cpp.o: /home/arjun/Documents/redis
 /usr/include/sched.h:
 
 /usr/include/locale.h:
+
+/usr/include/linux/falloc.h:
 
 /usr/include/linux/errno.h:
 
@@ -684,15 +689,11 @@ src/client/CMakeFiles/Client.dir/start-client.cpp.o: /home/arjun/Documents/redis
 
 /usr/include/c++/14.1.1/cstdio:
 
-/usr/include/c++/14.1.1/string:
+/usr/include/c++/14.1.1/cerrno:
 
-/usr/include/bits/types/struct_timespec.h:
+/usr/include/c++/14.1.1/bits/version.h:
 
-/usr/include/bits/types/struct_sched_param.h:
-
-/usr/include/ctype.h:
-
-/usr/include/bits/waitflags.h:
+/usr/include/c++/14.1.1/bits/utility.h:
 
 /usr/include/bits/types/struct_FILE.h:
 
@@ -716,6 +717,10 @@ src/client/CMakeFiles/Client.dir/start-client.cpp.o: /home/arjun/Documents/redis
 
 /usr/include/c++/14.1.1/bits/ostream_insert.h:
 
+/usr/include/c++/14.1.1/bits/alloc_traits.h:
+
+/usr/include/bits/struct_stat.h:
+
 /usr/include/bits/types/time_t.h:
 
 /usr/include/c++/14.1.1/bits/move.h:
@@ -736,14 +741,6 @@ src/client/CMakeFiles/Client.dir/start-client.cpp.o: /home/arjun/Documents/redis
 
 /usr/include/bits/stdint-intn.h:
 
-/usr/include/features.h:
-
-/usr/include/bits/endianness.h:
-
-/usr/include/bits/stdlib-float.h:
-
-/usr/include/bits/time64.h:
-
 /usr/include/c++/14.1.1/stdexcept:
 
 /usr/include/bits/types/__mbstate_t.h:
@@ -751,6 +748,32 @@ src/client/CMakeFiles/Client.dir/start-client.cpp.o: /home/arjun/Documents/redis
 /usr/include/bits/stdio_lim.h:
 
 /usr/include/bits/time.h:
+
+/usr/include/bits/setjmp.h:
+
+/usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/gthr.h:
+
+/usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/c++allocator.h:
+
+/usr/include/bits/types/struct___jmp_buf_tag.h:
+
+/usr/include/c++/14.1.1/bits/range_access.h:
+
+/usr/include/bits/types/__fpos64_t.h:
+
+/usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/ctype_inline.h:
+
+/usr/include/c++/14.1.1/bits/stl_algobase.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/features.h:
+
+/usr/include/bits/endianness.h:
+
+/usr/include/bits/stdlib-float.h:
+
+/usr/include/bits/time64.h:
 
 /usr/include/bits/types.h:
 
@@ -766,9 +789,11 @@ src/client/CMakeFiles/Client.dir/start-client.cpp.o: /home/arjun/Documents/redis
 
 /usr/include/c++/14.1.1/bits/functexcept.h:
 
-/usr/include/bits/struct_rwlock.h:
+/usr/include/strings.h:
 
-/usr/include/bits/types/struct_itimerspec.h:
+/usr/include/bits/fcntl-linux.h:
+
+/usr/include/bits/unistd_ext.h:
 
 /usr/include/bits/types/__sigset_t.h:
 
@@ -788,17 +813,9 @@ src/client/CMakeFiles/Client.dir/start-client.cpp.o: /home/arjun/Documents/redis
 
 /usr/include/c++/14.1.1/cwchar:
 
+/usr/include/bits/stat.h:
+
 /usr/include/assert.h:
-
-/usr/include/bits/setjmp.h:
-
-/usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/gthr.h:
-
-/usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/c++allocator.h:
-
-/usr/include/bits/types/struct___jmp_buf_tag.h:
-
-/usr/include/c++/14.1.1/bits/range_access.h:
 
 /usr/include/asm-generic/errno.h:
 
@@ -824,8 +841,6 @@ src/client/CMakeFiles/Client.dir/start-client.cpp.o: /home/arjun/Documents/redis
 
 /usr/include/bits/uintn-identity.h:
 
-/usr/include/c++/14.1.1/bits/utility.h:
-
 /usr/include/bits/long-double.h:
 
 /usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/gthr-default.h:
@@ -835,6 +850,10 @@ src/client/CMakeFiles/Client.dir/start-client.cpp.o: /home/arjun/Documents/redis
 /usr/include/bits/environments.h:
 
 /usr/include/bits/locale.h:
+
+/usr/include/bits/fcntl.h:
+
+/usr/include/c++/14.1.1/bits/stl_construct.h:
 
 /usr/include/bits/types/mbstate_t.h:
 
@@ -876,15 +895,25 @@ src/client/CMakeFiles/Client.dir/start-client.cpp.o: /home/arjun/Documents/redis
 
 /usr/include/gnu/stubs.h:
 
+/usr/include/fcntl.h:
+
 /usr/include/bits/pthreadtypes-arch.h:
 
-/usr/include/bits/types/__fpos64_t.h:
+/usr/include/bits/types/struct_iovec.h:
 
-/usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/ctype_inline.h:
+/usr/include/bits/struct_rwlock.h:
 
-/usr/include/c++/14.1.1/bits/stl_algobase.h:
+/usr/include/bits/types/struct_itimerspec.h:
 
-/usr/include/bits/select.h:
+/usr/include/bits/types/struct_sched_param.h:
+
+/usr/include/ctype.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/c++/14.1.1/string:
+
+/usr/include/bits/types/struct_timespec.h:
 
 /usr/include/bits/types/struct_tm.h:
 
@@ -898,8 +927,6 @@ src/client/CMakeFiles/Client.dir/start-client.cpp.o: /home/arjun/Documents/redis
 
 /usr/include/c++/14.1.1/bits/cxxabi_forced.h:
 
-/usr/include/bits/unistd_ext.h:
-
 /usr/include/bits/timesize.h:
 
 /usr/include/bits/waitstatus.h:
@@ -911,8 +938,6 @@ src/client/CMakeFiles/Client.dir/start-client.cpp.o: /home/arjun/Documents/redis
 /usr/include/bits/wordsize.h:
 
 /usr/include/c++/14.1.1/backward/binders.h:
-
-/usr/include/c++/14.1.1/bits/alloc_traits.h:
 
 /usr/include/c++/14.1.1/bits/allocator.h:
 
@@ -930,8 +955,6 @@ src/client/CMakeFiles/Client.dir/start-client.cpp.o: /home/arjun/Documents/redis
 
 /usr/include/c++/14.1.1/bits/basic_string.h:
 
-/usr/include/c++/14.1.1/cerrno:
-
 /usr/include/c++/14.1.1/bits/basic_string.tcc:
 
 /usr/include/c++/14.1.1/bits/char_traits.h:
@@ -941,6 +964,10 @@ src/client/CMakeFiles/Client.dir/start-client.cpp.o: /home/arjun/Documents/redis
 /usr/include/bits/byteswap.h:
 
 /usr/include/c++/14.1.1/bits/cpp_type_traits.h:
+
+/usr/include/c++/14.1.1/cctype:
+
+/usr/include/c++/14.1.1/bits/hash_bytes.h:
 
 /usr/include/bits/socket_type.h:
 
@@ -953,8 +980,6 @@ src/client/CMakeFiles/Client.dir/start-client.cpp.o: /home/arjun/Documents/redis
 /usr/include/c++/14.1.1/bits/locale_facets.tcc:
 
 /usr/include/c++/14.1.1/bits/nested_exception.h:
-
-/usr/include/c++/14.1.1/bits/version.h:
 
 /usr/include/c++/14.1.1/bits/new_allocator.h:
 
@@ -984,8 +1009,6 @@ src/client/CMakeFiles/Client.dir/start-client.cpp.o: /home/arjun/Documents/redis
 
 /usr/include/c++/14.1.1/bits/stl_iterator_base_funcs.h:
 
-/usr/include/c++/14.1.1/bits/stl_construct.h:
-
 /usr/include/c++/14.1.1/bits/stl_function.h:
 
 /usr/include/c++/14.1.1/bits/stl_iterator_base_types.h:
@@ -995,7 +1018,3 @@ src/client/CMakeFiles/Client.dir/start-client.cpp.o: /home/arjun/Documents/redis
 /usr/include/alloca.h:
 
 /usr/include/c++/14.1.1/bits/stringfwd.h:
-
-/usr/include/c++/14.1.1/bits/hash_bytes.h:
-
-/usr/include/c++/14.1.1/cctype:

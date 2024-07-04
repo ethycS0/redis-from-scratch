@@ -1,12 +1,15 @@
 #include"helper.h"
-
-size_t max_msg = 4096;
+#include<fcntl.h>
 
 void log(std::string log) {
     std::cout << "[o] Log: " << log << std::endl;
 }
 
 void response(char* response, std::string agent) {
+    std::cout << "{} " << agent << " Response: " << response << std::endl;
+}
+
+void response(unsigned char * response, std::string agent) {
     std::cout << "{} " << agent << " Response: " << response << std::endl;
 }
 
@@ -41,4 +44,21 @@ int32_t m_write(int socket, char *buffer, size_t n) {
         buffer += wval;
     }
     return 0;
+}
+
+void socket_nb(int socket) {
+    errno =0;
+    int flags = fcntl(socket, F_GETFL, 0);
+    if(errno) {
+        exception("fcntl() error");
+        return;
+    }
+
+    flags |= O_NONBLOCK;
+
+    errno = 0;
+    (void)fcntl(socket, F_SETFL, flags);
+    if(errno) {
+        exception("fcntl() error");
+    }
 }

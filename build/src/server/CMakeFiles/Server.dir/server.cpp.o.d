@@ -148,4 +148,13 @@ src/server/CMakeFiles/Server.dir/server.cpp.o: \
  /usr/include/c++/14.1.1/bits/locale_facets.tcc \
  /usr/include/c++/14.1.1/bits/basic_ios.tcc \
  /usr/include/c++/14.1.1/bits/ostream.tcc /usr/include/c++/14.1.1/istream \
- /usr/include/c++/14.1.1/bits/istream.tcc /usr/include/assert.h
+ /usr/include/c++/14.1.1/bits/istream.tcc /usr/include/assert.h \
+ /home/arjun/Documents/redis-from-scratch/src/server/protocol.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/stdint-least.h \
+ /usr/include/c++/14.1.1/vector \
+ /usr/include/c++/14.1.1/bits/stl_uninitialized.h \
+ /usr/include/c++/14.1.1/bits/stl_vector.h \
+ /usr/include/c++/14.1.1/bits/stl_bvector.h \
+ /usr/include/c++/14.1.1/bits/vector.tcc /usr/include/poll.h \
+ /usr/include/sys/poll.h /usr/include/bits/poll.h

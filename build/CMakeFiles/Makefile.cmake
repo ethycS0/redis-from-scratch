@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "/home/arjun/Documents/redis-from-scratch/CMakeLists.txt"
-  "CMakeFiles/3.29.4/CMakeCCompiler.cmake"
-  "CMakeFiles/3.29.4/CMakeCXXCompiler.cmake"
-  "CMakeFiles/3.29.4/CMakeSystem.cmake"
+  "CMakeFiles/3.29.6/CMakeCCompiler.cmake"
+  "CMakeFiles/3.29.6/CMakeCXXCompiler.cmake"
+  "CMakeFiles/3.29.6/CMakeSystem.cmake"
   "/home/arjun/Documents/redis-from-scratch/src/client/CMakeLists.txt"
   "/home/arjun/Documents/redis-from-scratch/src/server/CMakeLists.txt"
   "/usr/share/cmake/Modules/CMakeCInformation.cmake"

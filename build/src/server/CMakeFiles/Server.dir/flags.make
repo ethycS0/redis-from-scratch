@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/arjun/Documents/redis-from-scratch/src/server/../common -I/home/arjun/Documents/redis-from-scratch/src/server
 
-CXX_FLAGS = -std=gnu++11
+CXX_FLAGS = -g -g -std=gnu++11
 

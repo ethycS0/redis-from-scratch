@@ -15,6 +15,7 @@ public:
     ~Client();
     void connectServer();
 private:
+    static const size_t max_msg = 4096;
     std::string agent = "Server";
 
     int m_port;
@@ -27,7 +28,10 @@ private:
     int startClient();
     void closeClient();
 
-    int32_t m_query(int socket, const char *text);
+    int32_t sendRequest(int socket,const char *text);
+    int32_t readResponse(int socket);
+
+    // int32_t m_query(int socket, const char *text);
 
 };
 

@@ -154,6 +154,30 @@ __/common/helper.cpp.s:
 	cd /home/arjun/Documents/redis-from-scratch/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/Server.dir/build.make src/server/CMakeFiles/Server.dir/__/common/helper.cpp.s
 .PHONY : __/common/helper.cpp.s
 
+protocol.o: protocol.cpp.o
+.PHONY : protocol.o
+
+# target to build an object file
+protocol.cpp.o:
+	cd /home/arjun/Documents/redis-from-scratch/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/Server.dir/build.make src/server/CMakeFiles/Server.dir/protocol.cpp.o
+.PHONY : protocol.cpp.o
+
+protocol.i: protocol.cpp.i
+.PHONY : protocol.i
+
+# target to preprocess a source file
+protocol.cpp.i:
+	cd /home/arjun/Documents/redis-from-scratch/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/Server.dir/build.make src/server/CMakeFiles/Server.dir/protocol.cpp.i
+.PHONY : protocol.cpp.i
+
+protocol.s: protocol.cpp.s
+.PHONY : protocol.s
+
+# target to generate assembly for a file
+protocol.cpp.s:
+	cd /home/arjun/Documents/redis-from-scratch/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/Server.dir/build.make src/server/CMakeFiles/Server.dir/protocol.cpp.s
+.PHONY : protocol.cpp.s
+
 server.o: server.cpp.o
 .PHONY : server.o
 
@@ -214,6 +238,9 @@ help:
 	@echo "... __/common/helper.o"
 	@echo "... __/common/helper.i"
 	@echo "... __/common/helper.s"
+	@echo "... protocol.o"
+	@echo "... protocol.i"
+	@echo "... protocol.s"
 	@echo "... server.o"
 	@echo "... server.i"
 	@echo "... server.s"

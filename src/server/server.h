@@ -8,6 +8,9 @@
 #include<unistd.h>
 #include<cstring>
 
+#include"../common/helper.h"
+#include"protocol.h"
+
 class Server {
 
 public:
@@ -16,7 +19,9 @@ public:
     void startListening();
 
 private:
-    std::string agent = "Client";
+    // std::string agent = "Client";
+    
+    static const size_t max_msg = 4096;
     
     int m_port;
     std::string m_ipaddress;
@@ -29,9 +34,11 @@ private:
     
     int32_t startServer();
     void closeServer();
-    void m_connect(int &newsocket);
-    
-    int32_t m_request(int socket);
+
+    Protocol protocol;
+    // void m_connect(int &newsocket);
+    // int32_t m_request(int socket);
+
 };
 
 #endif
