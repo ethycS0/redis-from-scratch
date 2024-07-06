@@ -10,7 +10,7 @@
 #include<poll.h>
 #include<netinet/in.h>
 #include<cstring>
-
+#include<map>
 
 class Protocol {
 
@@ -20,6 +20,8 @@ public:
 private:
 
     std::string agent = "Client";
+    static const size_t max_args = 1024;
+
 
     static const size_t max_msg = 4096;
 
@@ -34,11 +36,16 @@ private:
         
     };
 
-
     enum {
         STATE_REQ = 0,
         STATE_RES = 1,
         STATE_END = 2,
+    };
+
+    enum {
+        RES_OK = 0,
+        RES_ERR = 1,
+        RES_NX = 2,
     };
 
     void putConnection(std::vector<connection *> &con_vec, struct connection *sock_con);
@@ -49,6 +56,16 @@ private:
     void responseState(connection* con);
 
     bool oneRequest(connection *con);
+
+    int32_t processRequest(uint8_t *req, uint32_t reqlen, uint32_t *rescode, uint8_t *res, uint32_t *reslen);
+    int32_t parseRequest(uint8_t *data, size_t len, std::vector<std::string> &out);
+
+    uint32_t cmdGET(std::vector<std::string> &cmd, uint8_t *res, uint32_t *reslen);
+    uint32_t cmdSET(std::vector<std::string> &cmd, uint8_t *res, uint32_t *reslen);
+    uint32_t cmdDEL(std::vector<std::string> &cmd, uint8_t *res, uint32_t *reslen);
+
+    std::map<std::string, std::string> g_map;
+
 };
 
 #endif

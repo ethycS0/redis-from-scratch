@@ -186,6 +186,7 @@ src/server/CMakeFiles/Server.dir/__/common/helper.cpp.o: /home/arjun/Documents/r
   /usr/include/stdc-predef.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
+  /usr/include/strings.h \
   /usr/include/sys/cdefs.h \
   /usr/include/sys/select.h \
   /usr/include/sys/single_threaded.h \
@@ -301,6 +302,7 @@ src/server/CMakeFiles/Server.dir/protocol.cpp.o: /home/arjun/Documents/redis-fro
   /usr/include/c++/14.1.1/bits/cpp_type_traits.h \
   /usr/include/c++/14.1.1/bits/cxxabi_forced.h \
   /usr/include/c++/14.1.1/bits/cxxabi_init_exception.h \
+  /usr/include/c++/14.1.1/bits/erase_if.h \
   /usr/include/c++/14.1.1/bits/exception.h \
   /usr/include/c++/14.1.1/bits/exception_defines.h \
   /usr/include/c++/14.1.1/bits/exception_ptr.h \
@@ -335,12 +337,16 @@ src/server/CMakeFiles/Server.dir/protocol.cpp.o: /home/arjun/Documents/redis-fro
   /usr/include/c++/14.1.1/bits/stl_iterator.h \
   /usr/include/c++/14.1.1/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/14.1.1/bits/stl_iterator_base_types.h \
+  /usr/include/c++/14.1.1/bits/stl_map.h \
+  /usr/include/c++/14.1.1/bits/stl_multimap.h \
   /usr/include/c++/14.1.1/bits/stl_pair.h \
+  /usr/include/c++/14.1.1/bits/stl_tree.h \
   /usr/include/c++/14.1.1/bits/stl_uninitialized.h \
   /usr/include/c++/14.1.1/bits/stl_vector.h \
   /usr/include/c++/14.1.1/bits/streambuf.tcc \
   /usr/include/c++/14.1.1/bits/streambuf_iterator.h \
   /usr/include/c++/14.1.1/bits/stringfwd.h \
+  /usr/include/c++/14.1.1/bits/uses_allocator.h \
   /usr/include/c++/14.1.1/bits/utility.h \
   /usr/include/c++/14.1.1/bits/vector.tcc \
   /usr/include/c++/14.1.1/bits/version.h \
@@ -355,6 +361,7 @@ src/server/CMakeFiles/Server.dir/protocol.cpp.o: /home/arjun/Documents/redis-fro
   /usr/include/c++/14.1.1/debug/assertions.h \
   /usr/include/c++/14.1.1/debug/debug.h \
   /usr/include/c++/14.1.1/exception \
+  /usr/include/c++/14.1.1/ext/aligned_buffer.h \
   /usr/include/c++/14.1.1/ext/alloc_traits.h \
   /usr/include/c++/14.1.1/ext/atomicity.h \
   /usr/include/c++/14.1.1/ext/numeric_traits.h \
@@ -365,12 +372,14 @@ src/server/CMakeFiles/Server.dir/protocol.cpp.o: /home/arjun/Documents/redis-fro
   /usr/include/c++/14.1.1/iosfwd \
   /usr/include/c++/14.1.1/iostream \
   /usr/include/c++/14.1.1/istream \
+  /usr/include/c++/14.1.1/map \
   /usr/include/c++/14.1.1/new \
   /usr/include/c++/14.1.1/ostream \
   /usr/include/c++/14.1.1/stdexcept \
   /usr/include/c++/14.1.1/streambuf \
   /usr/include/c++/14.1.1/string \
   /usr/include/c++/14.1.1/system_error \
+  /usr/include/c++/14.1.1/tuple \
   /usr/include/c++/14.1.1/type_traits \
   /usr/include/c++/14.1.1/typeinfo \
   /usr/include/c++/14.1.1/vector \
@@ -527,6 +536,7 @@ src/server/CMakeFiles/Server.dir/server.cpp.o: /home/arjun/Documents/redis-from-
   /usr/include/c++/14.1.1/bits/cpp_type_traits.h \
   /usr/include/c++/14.1.1/bits/cxxabi_forced.h \
   /usr/include/c++/14.1.1/bits/cxxabi_init_exception.h \
+  /usr/include/c++/14.1.1/bits/erase_if.h \
   /usr/include/c++/14.1.1/bits/exception.h \
   /usr/include/c++/14.1.1/bits/exception_defines.h \
   /usr/include/c++/14.1.1/bits/exception_ptr.h \
@@ -561,12 +571,16 @@ src/server/CMakeFiles/Server.dir/server.cpp.o: /home/arjun/Documents/redis-from-
   /usr/include/c++/14.1.1/bits/stl_iterator.h \
   /usr/include/c++/14.1.1/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/14.1.1/bits/stl_iterator_base_types.h \
+  /usr/include/c++/14.1.1/bits/stl_map.h \
+  /usr/include/c++/14.1.1/bits/stl_multimap.h \
   /usr/include/c++/14.1.1/bits/stl_pair.h \
+  /usr/include/c++/14.1.1/bits/stl_tree.h \
   /usr/include/c++/14.1.1/bits/stl_uninitialized.h \
   /usr/include/c++/14.1.1/bits/stl_vector.h \
   /usr/include/c++/14.1.1/bits/streambuf.tcc \
   /usr/include/c++/14.1.1/bits/streambuf_iterator.h \
   /usr/include/c++/14.1.1/bits/stringfwd.h \
+  /usr/include/c++/14.1.1/bits/uses_allocator.h \
   /usr/include/c++/14.1.1/bits/utility.h \
   /usr/include/c++/14.1.1/bits/vector.tcc \
   /usr/include/c++/14.1.1/bits/version.h \
@@ -581,6 +595,7 @@ src/server/CMakeFiles/Server.dir/server.cpp.o: /home/arjun/Documents/redis-from-
   /usr/include/c++/14.1.1/debug/assertions.h \
   /usr/include/c++/14.1.1/debug/debug.h \
   /usr/include/c++/14.1.1/exception \
+  /usr/include/c++/14.1.1/ext/aligned_buffer.h \
   /usr/include/c++/14.1.1/ext/alloc_traits.h \
   /usr/include/c++/14.1.1/ext/atomicity.h \
   /usr/include/c++/14.1.1/ext/numeric_traits.h \
@@ -591,12 +606,14 @@ src/server/CMakeFiles/Server.dir/server.cpp.o: /home/arjun/Documents/redis-from-
   /usr/include/c++/14.1.1/iosfwd \
   /usr/include/c++/14.1.1/iostream \
   /usr/include/c++/14.1.1/istream \
+  /usr/include/c++/14.1.1/map \
   /usr/include/c++/14.1.1/new \
   /usr/include/c++/14.1.1/ostream \
   /usr/include/c++/14.1.1/stdexcept \
   /usr/include/c++/14.1.1/streambuf \
   /usr/include/c++/14.1.1/string \
   /usr/include/c++/14.1.1/system_error \
+  /usr/include/c++/14.1.1/tuple \
   /usr/include/c++/14.1.1/type_traits \
   /usr/include/c++/14.1.1/typeinfo \
   /usr/include/c++/14.1.1/vector \
@@ -753,6 +770,7 @@ src/server/CMakeFiles/Server.dir/start-server.cpp.o: /home/arjun/Documents/redis
   /usr/include/c++/14.1.1/bits/cpp_type_traits.h \
   /usr/include/c++/14.1.1/bits/cxxabi_forced.h \
   /usr/include/c++/14.1.1/bits/cxxabi_init_exception.h \
+  /usr/include/c++/14.1.1/bits/erase_if.h \
   /usr/include/c++/14.1.1/bits/exception.h \
   /usr/include/c++/14.1.1/bits/exception_defines.h \
   /usr/include/c++/14.1.1/bits/exception_ptr.h \
@@ -787,12 +805,16 @@ src/server/CMakeFiles/Server.dir/start-server.cpp.o: /home/arjun/Documents/redis
   /usr/include/c++/14.1.1/bits/stl_iterator.h \
   /usr/include/c++/14.1.1/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/14.1.1/bits/stl_iterator_base_types.h \
+  /usr/include/c++/14.1.1/bits/stl_map.h \
+  /usr/include/c++/14.1.1/bits/stl_multimap.h \
   /usr/include/c++/14.1.1/bits/stl_pair.h \
+  /usr/include/c++/14.1.1/bits/stl_tree.h \
   /usr/include/c++/14.1.1/bits/stl_uninitialized.h \
   /usr/include/c++/14.1.1/bits/stl_vector.h \
   /usr/include/c++/14.1.1/bits/streambuf.tcc \
   /usr/include/c++/14.1.1/bits/streambuf_iterator.h \
   /usr/include/c++/14.1.1/bits/stringfwd.h \
+  /usr/include/c++/14.1.1/bits/uses_allocator.h \
   /usr/include/c++/14.1.1/bits/utility.h \
   /usr/include/c++/14.1.1/bits/vector.tcc \
   /usr/include/c++/14.1.1/bits/version.h \
@@ -807,6 +829,7 @@ src/server/CMakeFiles/Server.dir/start-server.cpp.o: /home/arjun/Documents/redis
   /usr/include/c++/14.1.1/debug/assertions.h \
   /usr/include/c++/14.1.1/debug/debug.h \
   /usr/include/c++/14.1.1/exception \
+  /usr/include/c++/14.1.1/ext/aligned_buffer.h \
   /usr/include/c++/14.1.1/ext/alloc_traits.h \
   /usr/include/c++/14.1.1/ext/atomicity.h \
   /usr/include/c++/14.1.1/ext/numeric_traits.h \
@@ -817,12 +840,14 @@ src/server/CMakeFiles/Server.dir/start-server.cpp.o: /home/arjun/Documents/redis
   /usr/include/c++/14.1.1/iosfwd \
   /usr/include/c++/14.1.1/iostream \
   /usr/include/c++/14.1.1/istream \
+  /usr/include/c++/14.1.1/map \
   /usr/include/c++/14.1.1/new \
   /usr/include/c++/14.1.1/ostream \
   /usr/include/c++/14.1.1/stdexcept \
   /usr/include/c++/14.1.1/streambuf \
   /usr/include/c++/14.1.1/string \
   /usr/include/c++/14.1.1/system_error \
+  /usr/include/c++/14.1.1/tuple \
   /usr/include/c++/14.1.1/type_traits \
   /usr/include/c++/14.1.1/typeinfo \
   /usr/include/c++/14.1.1/vector \
@@ -888,7 +913,11 @@ src/server/CMakeFiles/Server.dir/start-server.cpp.o: /home/arjun/Documents/redis
 
 /usr/include/c++/14.1.1/vector:
 
+/usr/include/c++/14.1.1/tuple:
+
 /usr/include/c++/14.1.1/cstring:
+
+/usr/include/c++/14.1.1/bits/erase_if.h:
 
 /usr/include/bits/sockaddr.h:
 
@@ -934,6 +963,8 @@ src/server/CMakeFiles/Server.dir/start-server.cpp.o: /home/arjun/Documents/redis
 
 /usr/include/linux/errno.h:
 
+/usr/include/c++/14.1.1/map:
+
 /usr/include/gnu/stubs-64.h:
 
 /usr/include/poll.h:
@@ -955,6 +986,8 @@ src/server/CMakeFiles/Server.dir/start-server.cpp.o: /home/arjun/Documents/redis
 /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stddef.h:
 
 /usr/include/c++/14.1.1/type_traits:
+
+/usr/include/c++/14.1.1/bits/uses_allocator.h:
 
 /home/arjun/Documents/redis-from-scratch/src/server/protocol.cpp:
 
@@ -989,6 +1022,8 @@ src/server/CMakeFiles/Server.dir/start-server.cpp.o: /home/arjun/Documents/redis
 /usr/include/c++/14.1.1/debug/debug.h:
 
 /usr/include/c++/14.1.1/debug/assertions.h:
+
+/usr/include/c++/14.1.1/bits/stl_tree.h:
 
 /usr/include/c++/14.1.1/cwctype:
 
@@ -1104,6 +1139,8 @@ src/server/CMakeFiles/Server.dir/start-server.cpp.o: /home/arjun/Documents/redis
 
 /usr/include/c++/14.1.1/bits/functexcept.h:
 
+/usr/include/c++/14.1.1/bits/stl_map.h:
+
 /usr/include/strings.h:
 
 /usr/include/bits/fcntl-linux.h:
@@ -1156,6 +1193,8 @@ src/server/CMakeFiles/Server.dir/start-server.cpp.o: /home/arjun/Documents/redis
 
 /usr/include/bits/uintn-identity.h:
 
+/usr/include/c++/14.1.1/bits/stl_multimap.h:
+
 /usr/include/bits/long-double.h:
 
 /usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/gthr-default.h:
@@ -1175,6 +1214,8 @@ src/server/CMakeFiles/Server.dir/start-server.cpp.o: /home/arjun/Documents/redis
 /usr/include/bits/types/error_t.h:
 
 /usr/include/c++/14.1.1/bits/std_abs.h:
+
+/usr/include/c++/14.1.1/ext/aligned_buffer.h:
 
 /usr/include/c++/14.1.1/bits/invoke.h:
 

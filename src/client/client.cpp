@@ -1,5 +1,5 @@
 #include"client.h"
-#include"../common/helper.h"
+
 
 Client::Client(std::string ip_address, int port) :
     m_port(port),
@@ -33,47 +33,53 @@ void Client::closeClient() {
     exit(0);
 }
 
-void Client::connectServer() {
+int Client::connectServer() {
     int r_con = connect(m_socket,(sockaddr *) &m_sockaddr, sockaddr_len);
     if(r_con != 0) {
         exception("Failed to Connect to Server");
+        return -1;
     }
     std::string s_con = "Connected to Server at " + m_ipaddress + ":" + std::to_string(m_port);
     log(s_con);
-
-    const char* q1 = "I";
-    const char* q2 = "Love";
-    const char* q3 = "You";
-
-    const char* query[3] = {q1 , q2, q3};
-    for(size_t i = 0; i < 3; ++i) {
-        int32_t err = sendRequest(m_socket, query[i]);
-        if(err) {
-            exception("Error Sending Message");
-        }
-    }
-
-    for(size_t i = 0; i < 3; ++i) {
-        int32_t err = readResponse(m_socket);
-        if(err) {
-            closeClient();
-        }
-    }
-
-    closeClient();
+    
+    return m_socket;
 }
 
-int32_t Client::sendRequest(int socket,const char *text) {
-    uint32_t len = (uint32_t)strlen(text);
-    if(len > max_msg) {
-        exception("Message Too Long");
+// int32_t Client::sendRequest(int socket,const char *text) {
+//     uint32_t len = (uint32_t)strlen(text);
+//     if(len > max_msg) {
+//         exception("Message Too Long");
+//         return -1;
+//     }
+
+//     char w_buffer[4 + max_msg];
+//     std::memcpy(w_buffer, &len, 4);
+//     std::memcpy(&w_buffer[4], text, len);
+//     return m_write(socket, w_buffer, 4 + len);
+// }
+
+
+int32_t Client::sendRequest(int fd, std::vector<std::string> &cmd) {
+    uint32_t len = 4;
+    for(std::string &s : cmd) {
+        len += 4 + s.size();
+    }
+    if (len > max_msg) {
         return -1;
     }
 
     char w_buffer[4 + max_msg];
-    std::memcpy(w_buffer, &len, 4);
-    std::memcpy(&w_buffer[4], text, len);
-    return m_write(socket, w_buffer, 4 + len);
+    std::memcpy(&w_buffer[0], &len, 4);
+    uint32_t n = cmd.size();
+    std::memcpy(&w_buffer[4], &n, 4);
+    size_t cur = 8;
+    for(std::string &s : cmd) {
+        uint32_t p = (uint32_t)s.size();
+        std::memcpy(&w_buffer[cur], &p, 4);
+        std::memcpy(&w_buffer[cur + 4], s.data(), s.size());
+        cur += 4 + s.size();
+    }
+    return m_write(fd, w_buffer, 4 + len);
 }
 
 int32_t Client::readResponse(int socket) {
@@ -102,8 +108,28 @@ int32_t Client::readResponse(int socket) {
         return err;
     }
 
-    r_buffer[4 + len] = '\0';
-    response(&r_buffer[4], agent);
+    uint32_t rescode = 0;
+    if(len < 4) {
+        exception("Bad Response");
+        return -1;
+    }
+
+    std::memcpy(&rescode, &r_buffer[4], 4);
+
+    printf("server says: [%u] %.*s\n", rescode, len - 4, &r_buffer[8]);
+    
+    // std::string res = "Response code: ";
+    // size_t reslen = sizeof(res);
+    // char res_buffer[reslen + 4];
+
+    // std::memcpy(&res_buffer[0], &res, reslen);
+    // std::memcpy(&res_buffer[reslen], &rescode, 4);
+    
+    // r_buffer[4 + len] = '\0';
+
+    // std::cout << "Response Code: " << res << std::endl;
+    // response(&r_buffer[8], agent);
+    
     return 0;
 }
 
